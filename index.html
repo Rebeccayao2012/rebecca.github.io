@@ -134,15 +134,15 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link  active" data-nav-link onclick="changeDataPage('about'); return false;">About</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link onclick="changeDataPage('resume'); return false;">Resume</button>
           </li>
           
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Activities</button>
+            <button class="navbar-link" data-nav-link onclick="changeDataPage('profile'); return false;">Profile</button>
           </li>
           <!--
           <li class="navbar-item">
@@ -150,7 +150,7 @@
           </li>
           -->
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+            <button class="navbar-link" data-nav-link onclick="changeDataPage('contact'); return false;">Contact</button>
           </li>
 
         </ul>
@@ -193,7 +193,8 @@
               <div class="service-icon-box">
                 <img src="./assets/images/community_service.jpg" alt="camera icon" width="60" height="60">
               </div>
-
+              <a href="#profile" class="internal-link" onclick="changeDataPage('about'); return false;">
+             
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Community Service</h4>
 
@@ -201,7 +202,7 @@
                   I love giving back to the community. I've been part of service projects such as the University of Cincinnati's International Food Drive, a lemonade stand that donates to the Children Hospital, art and reading program for kids, and music events at senior centers and hospitals. I also designed a video for nonprofit EMBRACE.
                 </p>
               </div>
-
+              </a>
             </li>
             
 
@@ -210,7 +211,7 @@
               <div class="service-icon-box">
                 <img src="./assets/images/sports.jpg" alt="Web development icon" width="60" height="60">
               </div>
-
+              <a href="#profile" class="internal-link" onclick="changeDataPage('about'); return false;">
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Sports</h4>
 
@@ -218,7 +219,7 @@
                   Swimming is my main sport, and I love it because you have to push yourself and be strong mentally. I've swam since I was 3, and I achieved all the Junior Championship cuts in the long course season.
                 </p>
               </div>
-
+            </a>
             </li>
 
             <li class="service-item">
@@ -226,7 +227,7 @@
               <div class="service-icon-box">
                 <img src="./assets/images/music.jpg" alt="mobile app icon" width="60" height="60">
               </div>
-
+              <a href="#profile" class="internal-link" onclick="changeDataPage('about'); return false;">
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Performing Arts</h4>
 
@@ -234,16 +235,16 @@
                   I started playing the cello at age 4 and switched to the violin at age 7. I enjoy playing the violin very much and now is in the Cincinnati Junior Strings Orchestra.
                  </p>
               </div>
-
+            </a>
             </li>
 
             
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/Academics.jpg " alt="design icon" width="60" height="60">
+                <img src="./assets/images/math.jpg " alt="design icon" width="60" height="60">
               </div>
-
+              <a href="#profile" class="internal-link" onclick="changeDataPage('about'); return false;">
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Academics</h4>
 
@@ -252,7 +253,7 @@
                   I secured 99% or above in every subject in 7th grade, which is something I take pride in. 
                 </p>
               </div>
-
+            </a>
             </li>
           </ul>
 
@@ -263,241 +264,7 @@
           - testimonials "testimonials-list has-scrollbar" "h3 testimonials-title"
         -->
 
-        <section class="service">
-
-          <h3 class="h3 service-title" style="margin-bottom: 60px;">Activities </h3>
-
-          <ul class="service-list">
-          
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-          
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/community_service.jpg" alt="Henry william" width="60" height="60" data-testimonials-avatar>
-                </figure>
-          
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Community Service</h4>
-          
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                  
-                    I initiated a free “Swim with a Splash” event for my community because I had drastically improved in swimming, and 
-                    I wanted to help other kids become better too. There were many details I had to coordinate. I recruited a few peers to teach and assigned specific roles to avoid conflicts. Using Canva, I created a flyer for our community bulletin board and Facebook and also advertised by word of mouth. Using the information the parents had given to me on a Google form, I made individual lesson plans for each swimmer and assigned them to a coach according to the coach's strengths. We taught eleven kids over three days, confidently giving parents feedback after each lesson. The classes weren't easy, especially since one student was scared of water. It took two days to get him comfortable being in the pool, but he learned how to hold his breath underwater, which was a huge accomplishment. Later, his mom said that he now likes swimming and wants to take more lessons.
-                  
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-                
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/violin.jpg" alt="Henry william" width="60" height="60" data-testimonials-avatar>
-                </figure>
-                
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Violin</h4>
-          
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    When I was 6, I had the chance to pick an instrument, and I chose the violin, 
-                    despite knowing it is difficult and you have to keep standing, which is excruciating at times. Now, it is 
-                    something I am passionate about.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/math2.jpg" alt="Daniel lewis" width="60" height="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Math</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                  
-                    I have an affinity for math. Last year, in 6th grade, I qualified for state in MATHCOUNTS. This was a feat that 
-                    I'm really proud of because I was competing against 7th and 8th graders. 
-                    Math is really fascinating to me, and I will cherish it forever.
-                  
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/science.jpg" alt="Jessica miller" width="60" height="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Science</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    There are so many wonders of the world, and we continue to unveil new things every day. 
-                    I enjoy studying science, and it amazes me that there is so much to learn. As a child, I read many books about black holes, 
-                    redshift, and the Big Bang theory. This long-lasting interest prompted me to study Earth and Space on my Science Bowl team.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/swimming.jpeg" alt="Emily evans" width="60" height="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Swimming</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Swimming is my main sport, and I love it because you have to push yourself and be strong mentally.
-                    I've swam since I was 3, and I had the AAA time in the 50-yard breastroke, and I have achieved AA and A times in both Long Course and Short Course seasons.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/basketball.jpg" alt="Henry william" width="60" height="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Basketball</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    I've played basketball since I was 7 years old. 
-                    I also enjoy watching the NBA, and I wanted to become a basketball player when I grew up. Now, my interest has switched to oncology, but basketball was a huge thing to me 
-                    when I was little. My idol was Stephen Curry, and I always admired him for his grit and determination. Despite being 
-                    undersized and doubted by most scouts, he pushed on, and he is now one of the faces of the NBA. He inspires me to try to be better every day.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/tennis.jpg" alt="Henry william" width="60" height="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Tennis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    I've played tennis for 2-3 years, and I enjoy it a lot. I play in T3 Junior, the second highest level 
-                    in Harper's Point, which is my tennis league. I'm proud that I have been able to get to this level of tennis in only 2 years.
-                  </p>
-                </div>
-
-              </div>
-            </li>              
-
-          </ul>
-
-        </section>
-
-        <section class="service">
-
-          <h3 class="h3 service-title" style="margin-bottom: 60px;"> Other Interests </h3>
-
-          <ul class="service-list">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/stock.jpg" alt="Henry william" width="60" height="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Stocks</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                  
-                    In gifted class, we played the stock market game, which lasted for three months. At first, my partner and I were 
-                    cautious. When we wanted to invest in a stock, we'd watch it for a while before spending any money, and if our shares
-                     took a dip, we'd sell them immediately to avoid loss. However, we weren't making very much profit. We decided to 
-                     take some risks. We targeted tech companies, such as ASML and NVDA, because people got addicted to video games 
-                     during Covid. Also, we bought Merck & Co's stock, because they had just introduced a skin cancer vaccine, which 
-                     was something novel. I remember celebrating with my partner as ASML grew a historic $70 in a single day. Even though
-                      we started slow and sometimes lost money, we learned quickly and watched some of our stocks skyrocket in the final 
-                      days. Surprisingly, with only two people, we placed 2nd out of all our school teams. This experience was 
-                      fascinating and made me feel confident about investing in the future. Today, I continue to invest in the stock 
-                      market, and one of my stocks has grown by 20%!
-
-                  
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/chess.jpg" alt="Henry william" width="60" height="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Chess</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Chess is a hobby that I enjoy a lot. In my free time, I started playing chess. I spent most of my screen time in 
-                    chess, and it is something that is quite unique to me. In chess, I love playing the “bullet” game mode where players 
-                    have 1 minute on the clock to play. I enjoy this game mode a lot because it requires fast thinking and calculation. 
-                    Overall, chess is something I will cherish forever, and I can't believe I was able to find something so fun.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/cat.jpg" alt="Jessica miller" width="60" height="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Pets</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    I have 2 cats, Mi Mi (pronunciation: Mee - Mee) and Rockette. It was a cold, gray morning when we first encountered 
-                    Mi Mi. We fed her, and she hung around our house. It was starting to get colder, and we had concerns that Mi Mi 
-                    wouldn't be able to survive under these bitter conditions, so we brought her from shelter to shelter, 
-                    wanting to find her a good home. Nothing. We decided to adopt her, and we were happy. Later, we adopted Rockette, 
-                    who is younger, to make sure Mi Mi is always entertained. Rockette was found underneath a trailer, and she was 
-                    brought to PetSmart, which is where we got her. 
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
+       
 
         <!--
           - testimonials modal
@@ -697,7 +464,6 @@
         -->
 
         
-
         <section class="timeline">
 
           <div class="title-wrapper">
@@ -705,52 +471,79 @@
               <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">PERFORMING ARTS</h3>
+            <h3 class="h3">COMMUNITY SERVICE</h3>
           </div>
 
           <ol class="timeline-list">
 
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title"> Violin </h4>
-
-              <span>2020-present</span>
+            <li class="timeline-item" style="color: white;">
+               
+              Led a lemonade stand to help raise money for Children’s Hospital in Mason, Ohio; Donated $120 earned to the Children’s Hospital (Mason, OH, September 2023)
+            </li>
+            <li class="timeline-item" style="color: white;">
+              
+              Initiated and organized the “Kids Painting” and “Kids Reading” events for the Chestnut Hill Community with 24 kids joined (Mason, OH, July & August 2023)
+            </li>
+            <li class="timeline-item" style="color: white;">
+              
+              Participated a "Learn How to Swim with a Splash" event, which provided free private swimming lessons to 11 individuals aged 3-40 (Mason, OH, August 2023)
+            </li>
+            <li class="timeline-item" style="color: white;">
+                   
+              Joined the B.R.A.V.E. (Building Relationships and Valuing Experiences) Ambassadors' Student Leadership group at Mason Elementary School; Developed creative ideas and nurtured leadership skills in the community service (Mason, OH, 2022-2023)
+              <!-- 
+              <h4 class="h4 timeline-item-title"></h4>
 
               <p class="timeline-text">
                 <ul class="resume-list">
-                  
+                  <span>  </span>
                   <li class="resume-subList">
-                    Selected for University of Cincinnati College-Conservatory of Music (CCM) Junior Strings Orchestra, which is the highest level for my grade (Mason OH, September 2023 - present)  
-                  </li class="resume-subList">
-                  
-                  <li class="resume-subList">
-                    Engaged in weekly private violin lessons to develop musical skills and proficiency (Southlake, TX; Mason, OH)
+                    Initiated and organized "Learn How to Swim with a Splash," which provided free private swimming lessons to 11 individuals aged 3-40 (Mason, OH, August 2023)
                   </li>
-                </ul>
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title"> Cello </h4>
-
-              <span>2016-2020</span>
-
-              <p class="timeline-text">
-                <ul class="resume-list">
-                  
+                  <span></span>
                   <li class="resume-subList">
-                    Engaged in weekly private Cello lessons (Cleveland, OH; Southlake, TX)
-                  </li class="resume-subList">
+                    Spearheaded the Cincinnati AACO Youth Member (Asian-American Coalition of Ohio Youth Chapter) International Food 
+                    Drive for the University of Cincinnati's Bearcats Pantry; Successfully gathered monetary donations and Asian 
+                    vegetarian food for families of graduate students from India, Nepal, and Vietnam (Mason, OH, December 2022)
+                  </li>
+                  <span>  </span>
+                  <li class="resume-subList">
+                    Performed in a series of music events at senior centers and hospitals (Mason, OH, November 2022 and December 2023)
+                  </li>
+                  <span>  </span>
+                  <li class="resume-subList">
+                    Designed a video for the nonprofit EMBRACE, a 501(c)(3), to teach Asian immigrants English and how to adapt to their 
+                    lives in the U.S. (Mason, OH, September 2022)
+                  </li>
+                  
                 </ul>
               </p>
-
+            -->
             </li>
+            <li class="timeline-item" style="color: white;">
+              
+              Led the design, draft, and distribution of the 4th-grade classroom newsletters for Mason Elementary School (Mason, OH, 2022-2023)
+             </li>
+
+             <li class="timeline-item" style="color: white;">
+              
+              Designed 3 strategies for the Cincinnati AACO Youth Member (Asian-American Coalition of Ohio Youth Chapter) International Food Drive for the University of Cincinnati's Bearcats Pantry; Successfully gathered monetary donations and Asian vegetarian food for families of graduate students from India, Nepal, and Vietnam (Mason, OH, December 2022)
+            </li>
+
+            <li class="timeline-item" style="color: white;">
+              
+              Designed a video "Grandparents Learning English" for the nonprofit EMBRACE, a 501(c)(3), to teach Asian immigrants English and how to adapt to their lives in the U.S. (Mason, OH, September 2022)
+            </li>
+
+             <li class="timeline-item" style="color: white;">
+              
+              Performed in a series of music events at senior centers and hospitals (Mason, OH, November 2022 and December 2023)
+            </li>
+
           </ol>
 
         </section>
-
+        
         <section class="timeline">
 
           <div class="title-wrapper">
@@ -854,78 +647,53 @@
               <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">COMMUNITY SERVICE</h3>
+            <h3 class="h3">PERFORMING ARTS</h3>
           </div>
 
           <ol class="timeline-list">
 
-            <li class="timeline-item" style="color: white;">
-               
-              Led a lemonade stand to help raise money for Children’s Hospital in Mason, Ohio; Donated $120 earned to the Children’s Hospital (Mason, OH, September 2023)
-            </li>
-            <li class="timeline-item" style="color: white;">
-              
-              Initiated and organized the “Kids Painting” and “Kids Reading” events for the Chestnut Hill Community with 24 kids joined (Mason, OH, July & August 2023)
-            </li>
-            <li class="timeline-item" style="color: white;">
-              
-              Participated a "Learn How to Swim with a Splash" event, which provided free private swimming lessons to 11 individuals aged 3-40 (Mason, OH, August 2023)
-            </li>
-            <li class="timeline-item" style="color: white;">
-                   
-              Joined the B.R.A.V.E. (Building Relationships and Valuing Experiences) Ambassadors' Student Leadership group at Mason Elementary School; Developed creative ideas and nurtured leadership skills in the community service (Mason, OH, 2022-2023)
-              <!-- 
-              <h4 class="h4 timeline-item-title"></h4>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"> Violin </h4>
+
+              <span>2020-present</span>
 
               <p class="timeline-text">
                 <ul class="resume-list">
-                  <span>  </span>
-                  <li class="resume-subList">
-                    Initiated and organized "Learn How to Swim with a Splash," which provided free private swimming lessons to 11 individuals aged 3-40 (Mason, OH, August 2023)
-                  </li>
-                  <span></span>
-                  <li class="resume-subList">
-                    Spearheaded the Cincinnati AACO Youth Member (Asian-American Coalition of Ohio Youth Chapter) International Food 
-                    Drive for the University of Cincinnati's Bearcats Pantry; Successfully gathered monetary donations and Asian 
-                    vegetarian food for families of graduate students from India, Nepal, and Vietnam (Mason, OH, December 2022)
-                  </li>
-                  <span>  </span>
-                  <li class="resume-subList">
-                    Performed in a series of music events at senior centers and hospitals (Mason, OH, November 2022 and December 2023)
-                  </li>
-                  <span>  </span>
-                  <li class="resume-subList">
-                    Designed a video for the nonprofit EMBRACE, a 501(c)(3), to teach Asian immigrants English and how to adapt to their 
-                    lives in the U.S. (Mason, OH, September 2022)
-                  </li>
                   
+                  <li class="resume-subList">
+                    Selected for University of Cincinnati College-Conservatory of Music (CCM) Junior Strings Orchestra, which is the highest level for my grade (Mason OH, September 2023 - present)  
+                  </li class="resume-subList">
+                  
+                  <li class="resume-subList">
+                    Engaged in weekly private violin lessons to develop musical skills and proficiency (Southlake, TX; Mason, OH)
+                  </li>
                 </ul>
               </p>
-            -->
-            </li>
-            <li class="timeline-item" style="color: white;">
-              
-              Led the design, draft, and distribution of the 4th-grade classroom newsletters for Mason Elementary School (Mason, OH, 2022-2023)
-             </li>
 
-             <li class="timeline-item" style="color: white;">
-              
-              Designed 3 strategies for the Cincinnati AACO Youth Member (Asian-American Coalition of Ohio Youth Chapter) International Food Drive for the University of Cincinnati's Bearcats Pantry; Successfully gathered monetary donations and Asian vegetarian food for families of graduate students from India, Nepal, and Vietnam (Mason, OH, December 2022)
             </li>
 
-            <li class="timeline-item" style="color: white;">
-              
-              Designed a video "Grandparents Learning English" for the nonprofit EMBRACE, a 501(c)(3), to teach Asian immigrants English and how to adapt to their lives in the U.S. (Mason, OH, September 2022)
-            </li>
+            <li class="timeline-item">
 
-             <li class="timeline-item" style="color: white;">
-              
-              Performed in a series of music events at senior centers and hospitals (Mason, OH, November 2022 and December 2023)
-            </li>
+              <h4 class="h4 timeline-item-title"> Cello </h4>
 
+              <span>2016-2020</span>
+
+              <p class="timeline-text">
+                <ul class="resume-list">
+                  
+                  <li class="resume-subList">
+                    Engaged in weekly private Cello lessons (Cleveland, OH; Southlake, TX)
+                  </li class="resume-subList">
+                </ul>
+              </p>
+
+            </li>
           </ol>
 
         </section>
+
+        
 
         <section class="timeline">
 
@@ -1158,10 +926,10 @@
         - #Activities
       -->
 
-      <article class="activities" data-page="activities">
+      <article class="activities" data-page="profile">
 
         <header>
-          <h2 class="h2 article-title">Activities</h2>
+          <h2 class="h2 article-title">Profile</h2>
         </header>
 
         <section class="projects">
@@ -1234,45 +1002,6 @@
           </div>
 
           <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="community service">
-              <a href="#">
-
-
-                  <video width="320" height="240"  controls>
-                    <source src="./assets/images/Community Service/Swim With A Splash.mp4" type="video/mp4">
-                 </video>
-                <h3 class="project-title">Swim With A Splash - Free Private Swimming Lessons</h3>
-                
-                  <p class="project-category">Community Service</p>
-                
-
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="community service">
-              <a href="#">
-
-                  <a href="https://www.youtube.com/shorts/s8MEV5LGutI"><img class="myImg" src="./assets/images/Community Service/food_drive.png"  alt="summary" loading="lazy">
-                  </a>
-                <h3 class="project-title"> International Food Drive for the University of Cincinnati's Bearcats Pantry</h3>
-                
-                  <p class="project-category">Community Service</p>
-                
-
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="community service">
-              <a href="#">
-
-                  <a href="https://www.youtube.com/watch?v=3GJw5jXzEvs&list=PPSV"><img class="myImg" src="./assets/images/Community Service/chinese_teaching.png"  alt="summary" loading="lazy">
-                  </a>
-                <h3 class="project-title"> Video for nonprofit EMBRACE - Grandparents Learning English  </h3>
-                
-                  <p class="project-category">Community Service</p>
-              
-
-              </a>
-            </li>
             <li class="project-item  active" data-filter-item data-category="community service">
               <a href="#">
 
@@ -1313,6 +1042,45 @@
 
               </a>
             </li>
+            <li class="project-item  active" data-filter-item data-category="community service">
+              <a href="#">
+
+
+                  <video width="320" height="240"  controls>
+                    <source src="./assets/images/Community Service/Swim With A Splash.mp4" type="video/mp4">
+                 </video>
+                <h3 class="project-title">Swim With A Splash - Free Private Swimming Lessons</h3>
+                
+                  <p class="project-category">Community Service</p>
+                
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="community service">
+              <a href="#">
+
+                  <a href="https://www.youtube.com/shorts/s8MEV5LGutI"><img class="myImg" src="./assets/images/Community Service/food_drive.png"  alt="summary" loading="lazy">
+                  </a>
+                <h3 class="project-title"> International Food Drive for the University of Cincinnati's Bearcats Pantry</h3>
+                
+                  <p class="project-category">Community Service</p>
+                
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="community service">
+              <a href="#">
+
+                  <a href="https://www.youtube.com/watch?v=3GJw5jXzEvs&list=PPSV"><img class="myImg" src="./assets/images/Community Service/chinese_teaching.png"  alt="summary" loading="lazy">
+                  </a>
+                <h3 class="project-title"> Video for nonprofit EMBRACE - Grandparents Learning English  </h3>
+                
+                  <p class="project-category">Community Service</p>
+              
+
+              </a>
+            </li>
+            
 
             
             <li class="project-item  active" data-filter-item data-category="sports">
@@ -1321,10 +1089,10 @@
 
                   
                   <video width="320" height="240"  controls>
-                    <source src="./assets/images/Activities/Swimming/50_Breast_Stroke_12092023.mp4" type="video/mp4">
+                    <source src="./assets/images/Sport/100Im.mp4" type="video/mp4">
                  </video>
 
-                <h3 class="project-title"> 2023 OH Mako Holiday Spirit Classic 50 Yard Breastroke Finals</h3>
+                <h3 class="project-title"> 100 IM Finals</h3>
                 
                   <p class="project-category">Sports</p>
                 
@@ -1337,28 +1105,69 @@
 
                   
                   <video width="320" height="240"  controls>
-                    <source src="./assets/images/Activities/Swimming/200 Free 12092023.mp4" type="video/mp4">
+                    <source src="./assets/images/Sport/50Bk.mp4" type="video/mp4">
                  </video>
 
-                <h3 class="project-title"> 2023 OH Mako Holiday Spirit Classic 200 Yard Freestyle Finals </h3>
+                <h3 class="project-title"> 2023 OH Mako Holiday Spirit Classic 50 Breastroke Finals </h3>
                 
                   <p class="project-category">Sports</p>
                 
 
               </a>
             </li>
+            <li class="project-item  active" data-filter-item data-category="performing arts">
+              <a href="#">
+              
 
-            <li class="project-item  active" data-filter-item data-category="sports">
+                  <video width="320" height="240"  controls>
+                    <source src="./assets/images/Violin/Rebecca Yao Concerto In A Minor.mp4" type="video/mp4">
+                 </video>
+                <h3 class="project-title">Barrington Senior Center Recital</h3>
+                
+                  <p class="project-category">Performing Arts</p>
+                
+
+              </a>
+            </li>
+            
+            <li class="project-item  active" data-filter-item data-category="performing arts">
+              <a href="#">
+
+
+                  <video width="320" height="240"  controls>
+                    <source src="./assets/images/Violin/Cjs Concert 3.mp4" type="video/mp4">
+                 </video>
+                <h3 class="project-title"> University of Cincinnati College-Conservatory of Music (CCM) Junior Strings Orchestra</h3>
+                
+                  <p class="project-category">Performing Arts</p>
+                
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="performing arts">
+              <a href="#">
+
+
+                  <img class="myImg" src="./assets/images/Violin/Cello.JPG" alt="metaspark" loading="lazy"  image_list>
+                  
+                <h3 class="project-title">Cello Performance </h3>
+                
+                  <p class="project-category">Performing Arts</p>
+                
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="performing arts">
               <a href="#">
 
                   
-                  <video width="320" height="240"  controls>
-                    <source src="./assets/images/Activities/Swimming/200 Im 12082023.mp4" type="video/mp4">
-                 </video>
+                <img class="myImg" src="./assets/images/Sport/Soccer.JPG" alt="brawlhalla" loading="lazy"  image_list>
 
-                <h3 class="project-title"> 2023 OH Mako Holiday Spirit Classic 200 Yard Individual Medley Finals </h3>
                 
-                  <p class="project-category">Sports</p>
+
+                <h3 class="project-title"> Soccer </h3>
+                
+                  <p class="project-category">Performing Arts</p>
                 
 
               </a>
@@ -1414,48 +1223,7 @@
 
               </a>
             </li>
-            
-            <li class="project-item  active" data-filter-item data-category="performing arts">
-              <a href="#">
-
-
-                  <img class="myImg" src="./assets/images/Violin/Cello.JPG" alt="metaspark" loading="lazy"  image_list>
-                  
-                <h3 class="project-title">  </h3>
-                
-                  <p class="project-category">Performing Arts</p>
-                
-
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="performing arts">
-              <a href="#">
-
-
-                  <video width="320" height="240"  controls>
-                    <source src="./assets/images/Violin/Cjs Concert 3.mp4" type="video/mp4">
-                 </video>
-                <h3 class="project-title"> University of Cincinnati College-Conservatory of Music (CCM) Junior Strings Orchestra</h3>
-                
-                  <p class="project-category">Performing Arts</p>
-                
-
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="performing arts">
-              <a href="#">
-              
-
-                  <video width="320" height="240"  controls>
-                    <source src="./assets/images/Violin/Rebecca Yao Concerto In A Minor.mp4" type="video/mp4">
-                 </video>
-                <h3 class="project-title">Barrington Senior Center Recital</h3>
-                
-                  <p class="project-category">Performing Arts</p>
-                
-
-              </a>
-            </li>
+           
             <li class="project-item  active" data-filter-item data-category="academics">
               <a href="#">
 
@@ -1484,108 +1252,8 @@
 
               </a>
             </li>
-            <li class="project-item  active" data-filter-item data-category="others">
-              <a href="#">
 
-                <!--<figure class="project-img" project-img-list>
-                  
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  -->
-                  <ul id="container">                   
-                    <li>
-                      <img class="myImg" src="./assets/images/Other Activities/My Chinese School Classmates.JPG" alt="Math" loading="lazy"  image_list>
-                    </li>
-                    
-                  </ul>
-                  
-                <!--</figure> -->
-
-                <h3 class="project-title"> Friends </h3>
-                
-                  <p class="project-category">Otherss</p>
-                
-
-              </a>
-            </li>   
-            <li class="project-item  active" data-filter-item data-category="others">
-              <a href="#">
-
-                <!--<figure class="project-img" >-->
-
-
-                  <img class="myImg" src="./assets/images/Other Activities/Family Photo.JPG" alt="orizon" loading="lazy"  image_list>
-                <!--</figure>-->
-
-                <h3 class="project-title">Family</h3>
-                <p class="project-category">Others</p>
-                <!--
-                  <p class="project-category">Web development</p>
-                -->
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="others">
-              <a href="#">
-
-                <!--<figure class="project-img" >-->
-
-
-                  <img class="myImg" src="./assets/images/Activities/Other Interests/image_6487327.JPG" alt="orizon" loading="lazy"  image_list>
-                <!--</figure>-->
-
-                <h3 class="project-title">My Idol</h3>
-                <p class="project-category">Others</p>
-                <!--
-                  <p class="project-category">Web development</p>
-                -->
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="others">
-              <a href="#">
-
-                <!--<figure class="project-img" >-->
-
-
-                  <img class="myImg" src="./assets/images/Activities/Other Interests/image_6483441 (1).JPG" alt="orizon" loading="lazy"  image_list>
-                <!--</figure>-->
-
-                <h3 class="project-title">My Sister and I</h3>
-                <p class="project-category">Others</p>
-                <!--
-                  <p class="project-category">Web development</p>
-                -->
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="others">
-              <a href="#">
-
-                <!--<figure class="project-img" project-img-list>
-                  
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  -->
-                  <ul id="container">                   
-                    <li>
-                      <img class="myImg" src="./assets/images/Activities/Other Interests/image_6483441 (3).JPG" alt="Math" loading="lazy"  image_list>
-                    </li>
-                    
-                  </ul>
-                  
-                <!--</figure> -->
-
-                <h3 class="project-title">My Friends </h3>
-                
-                  <p class="project-category">Others</p>
-                
-
-              </a>
-            </li> 
-
-            <li class="project-item  active" data-filter-item data-category="others">
+            <li class="project-item  active" data-filter-item data-category="academics">
               <a href="#">
 
                 <!--<figure class="project-img" project-img-list>
@@ -1596,7 +1264,9 @@
                   -->
                   <ul id="container">
                     <li>
-                      <img class="myImg" src="./assets/images/Activities/Other Interests/image_6487327 (1).JPG" alt="Math" loading="lazy"  image_list>
+                      <video width="320" height="240"  controls>
+                        <source src="./assets/images/Other Activities/First Lego League.mp4" type="video/mp4">
+                     </video>
                     </li>
                     
 
@@ -1604,13 +1274,41 @@
                   
                 <!--</figure>-->
 
-                <h3 class="project-title">My Chinese School Classmates</h3>
+                <h3 class="project-title">2023 First LEGO League</h3>
                 
-                  <p class="project-category">Others</p>
+                  <p class="project-category">Academics</p>
                 
 
               </a>
             </li>
+            <li class="project-item  active" data-filter-item data-category="others">
+              <a href="#">
+
+                <!--<figure class="project-img" project-img-list>
+                  
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  -->
+                  <ul id="container">                   
+                    <li>
+                      <img class="myImg" src="./assets/images/Other Activities/Chinese School.jpg" alt="Math" loading="lazy"  image_list>
+                    </li>
+                    
+                  </ul>
+                  
+                <!--</figure> -->
+
+                <h3 class="project-title"> Chinese School Classmate </h3>
+                
+                  <p class="project-category">Otherss</p>
+                
+
+              </a>
+            </li>   
+            
+            
+
               
             <li class="project-item  active" data-filter-item data-category="others">
               <a href="#">
@@ -1623,7 +1321,7 @@
                   -->
                   <ul id="container">                   
                     <li>
-                      <img class="myImg" src="./assets/images/Activities/Other Interests/image_6483441 (2).JPG" alt="Math" loading="lazy"  image_list>
+                      <img class="myImg" src="./assets/images/Sport/scout.JPG" alt="Math" loading="lazy"  image_list>
                     </li>
                     
                   </ul>
@@ -1638,32 +1336,6 @@
               </a>
             </li>   
 
-            <li class="project-item  active" data-filter-item data-category="others">
-              <a href="#">
-
-                <!--<figure class="project-img" project-img-list>
-                  
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  -->
-                  <ul id="container">
-                    <li>
-                      <img class="myImg" src="./assets/images/Activities/Other Interests/image_6483441.JPG" alt="Math" loading="lazy"  image_list>
-                    </li>
-                    
-
-                  </ul>
-                  
-                <!--</figure>-->
-
-                <h3 class="project-title">My Swimming Awards</h3>
-                
-                  <p class="project-category">Others</p>
-                
-
-              </a>
-            </li>
             
             
             

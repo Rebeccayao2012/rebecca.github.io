@@ -134,7 +134,57 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
+//add go back function
+/*
+document.querySelectorAll('.internal-link').forEach(link => {
+  link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const page = this.getAttribute('href').substring(1);
+      document.querySelectorAll("[data-page]").forEach(p => {
+          p.classList.remove('active');
+      });
+      document.querySelector(`[data-page="${page}"]`).classList.add('active');
+  });
+});
+*/
+function changeDataPage(pageId) {
+  // Hide all pages
+  document.querySelectorAll('[data-page]').forEach(page => page.classList.remove('active'));
+  
+  // Show the selected page
+  document.querySelector(`[data-page="${pageId}"]`).classList.add('active');
 
+  // Add history state
+  history.pushState({ page: pageId }, '', '#' + pageId);
+}
+
+window.onpopstate = function(event) {
+  if (event.state) {
+      // Load the data page based on the state
+      loadDataPage(event.state.page);
+  }
+};
+
+function loadDataPage(pageId) {
+  // Hide all pages
+  document.querySelectorAll('[data-page]').forEach(page => page.classList.remove('active'));
+  
+  // Show the selected page
+  document.querySelector(`[data-page="${pageId}"]`).classList.add('active');
+}
+
+// Handle initial page load
+// Handle initial page load
+function handleInitialLoad() {
+  let pageId = window.location.hash.substring(1);
+  if (!pageId) {
+      pageId = 'about';
+      history.replaceState({ page: 'about' }, '', '#about');
+  }
+  loadDataPage(pageId);
+}
+
+handleInitialLoad();
 
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
@@ -157,7 +207,18 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+//overview link
 
+document.querySelectorAll('.internal-link').forEach(link => {
+  link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const page = this.getAttribute('href').substring(1);
+      document.querySelectorAll("[data-page]").forEach(p => {
+          p.classList.remove('active');
+      });
+      document.querySelector(`[data-page="${page}"]`).classList.add('active');
+  });
+});
 
 //image click variables
 const project_images = document.querySelectorAll("img[image_list]");
